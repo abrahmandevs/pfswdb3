@@ -1,3 +1,29 @@
+<?php
+	require('email.php');
+	
+	/* echo '<pre>';
+	echo 'get method';
+	print_r($_GET);
+	echo '</pre>'; */
+	if(isset($_GET['subContact'])){
+		$old = $_GET;
+		/* echo '<pre>';
+		echo 'get method';
+		print_r($_GET);
+		echo '</pre>'; */
+		
+		$contact = contactInfo();
+		
+		if (isset($contact['status']) && $contact['status'] == 'error'){
+			$errors= $contact['message'];			
+		}
+		
+		// if( $contact )
+		
+	}
+	
+
+?>
 <!DOCTYPE html>
 <html>
 	<head>

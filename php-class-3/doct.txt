@@ -1,0 +1,14 @@
+=======  php =======
+1. global variable $_GET, $_POST
+2. form related methods
+3. form action email.php
+4. get single data from $_get methods
+5. validation field value if condition
+6. Error Handling and return error 
+7. function make
+8. require file in index.php
+9. call a function
+10. check error
+11. error viewing in form and with old value
+12. email sending processing 
+13. send mail.....  
