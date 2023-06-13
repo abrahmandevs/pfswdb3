@@ -1,0 +1,40 @@
+html{
+    scroll-behavior:smooth;
+}
+section{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+#navbars ul li a:hover{
+    background-color:rgba(55, 137, 231, 0.589);
+    color: black;
+}
+.bg-transparent-dark{
+    background-color: rgba(55, 56, 55, 0.432);
+}
+#main-nav ul li a.active{
+    background-color: rgba(12, 12, 12, 0.486);
+}
+.top-auto{
+    top:auto;
+}
+.hover-effect:hover{
+    background-color: #2b67b448 !important;
+    transition: .7s;
+}
+.card:hover .hover-visible{
+    visibility: visible !important;
+}
+.card:hover .hover-opacity-75{
+    opacity: .75 !important;
+}
+.transition-all{
+    transition: all 1s;
+}
+#social ul li a i{
+    transition: 1s;
+}
+#sub-btn:hover{
+    color: rgb(67, 69, 71);
+    background-color: rgb(43, 138, 247) ;
+}
