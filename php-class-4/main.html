@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Required meta Tags -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1, shrink-to-fit=no" />
+		<title>projects</title>
+		<!-- for Use Icon -->
+		<link rel="icon" href="images/demo/tailwindcss-mark.svg" />
+		<!-- taolwind CSS -->
+		<link rel="stylesheet" href="css/tailwind.min.css" />
+		<!-- Company Icon -->
+		<link rel="stylesheet" href="css/all.css" />
+	</head>
+	<body>
+		<nav x-data="{ open: false }" class="bg-gray-800">
+			<div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+				<div class="flex items-center justify-between h-16">					
+					<div class="flex items-center justify-center sm:items-stretch sm:justify-start">
+						<div class="flex-shrink-0 flex">
+							<img class="block h-8 w-auto" src="images/demo/tailwindcss-mark.svg" alt="logo" />							
+						</div>
+						<div class="hidden sm:block sm:ml-6">
+							<div class="flex space-x-4">
+								<a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium" x-state:on="Current" x-state:off="Default" aria-current="page">Product</a>
+								<a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Features</a>
+								<a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Marketplace</a>
+								<a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Company</a>
+							</div>
+						</div>
+					</div>					
+						<!-- Profile dropdown -->
+					<div class="inset-0 flex items-center">
+						<button class="hidden sm:block px-5 py-1 rounded-sm uppercase text-white bg-gradient-to-r from-blue-500 to-red-600 ">login</button>
+						<!-- Mobile menu button-->
+						<button type="button" class="block sm:hidden p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+							aria-controls="mobile-menu"
+							@click="open = !open"
+							aria-expanded="false"
+							x-bind:aria-expanded="open.toString()">
+							<span class="sr-only">Open main menu</span>
+							<svg x-state:on="Menu open" x-state:off="Menu closed" class="block h-6 w-6" :class="{ 'hidden': open, 'block': !(open) }" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+							</svg>
+							<svg x-state:on="Menu open" x-state:off="Menu closed" class="hidden h-6 w-6" :class="{ 'block': open, 'hidden': !(open) }" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+							</svg>
+						</button>
+					</div>					
+				</div>
+			</div>
+			<div class="sm:hidden" id="mobile-menu" x-show="open">
+				<div class="space-y-2">
+					<a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" x-state:on="Current" x-state:off="Default" aria-current="page">Product</a>
+					<a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Features</a>
+					<a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Marketplace</a>
+					<a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Company</a>
+				</div>
+			</div>
+		</nav>
+		<main>
+            <section id="" class="bg-gray-900">
+                <div class="container  mx-auto py-20 px-3 md:px-0">
+                    <div class="grid grid-cols-12 gap-3 justify-center items-center ">
+                        <div class="col-span-full md:col-span-6">
+                            <div class="flex items-center text-white p-1 bg-black rounded-full w-auto">
+                                <h3 class="bg-indigo-800 rounded-full h-6 px-5 uppercase text-center">we're hiring</h3>
+                                <span class="ml-4">Visit out careets page
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="inline-block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="text-white font-bold">
+                                <h1 class="text-6xl">Data to enrich ypur</h1>
+                                <h1 class="text-6xl">online business</h1>
+                                <p class="font-semibold text-xl text-gray-500 py-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum aperiam culpa nisi assumenda rerum perferendis quis temporibus at nemo ex.</p>
+                            </div>
+                            <div class="grid grid-cols-12 justify-center items-center text-xl text-gray-500 font-bold">
+                                <p class="col-span-full mb-2 font-normal uppercase ">used by</p>
+                                <div class="col-span-4 uppercase "><p>tuple</p></div>
+                                <div class="col-span-4"><p>Workcation</p></div>
+                                <div class="col-span-4"><p>Statickit</p></div>
+                            </div>
+                        </div>
+                        <div class="col-span-full md:col-span-6  ">
+                            <form class="bg-white w-10/12 mx-auto rounded-md p-8 space-y-2"> 
+                                <p class="text-gray-400 font-bold">Sign in with</p>
+                                <div class="flex gap-3">
+                                    <button class="px-8 py-1 border text-gray-300 rounded-md"><i class="fab fa-facebook"></i></button>
+                                    <button class="px-8 py-1 border text-gray-300 rounded-md"><i class="fab fa-twitter"></i></button>
+                                    <button class="px-8 py-1 border text-gray-300 rounded-md"><i class="fab fa-github"></i></button>
+                                </div>
+                                <div class="pt-8">
+                                    <input type="text" class="tracking-widest border rounded-md w-full p-1 " name="fullname" id="name" placeholder="Full name">							
+                                </div>
+                                <div class="pt-3">
+                                    <input type="text" class="tracking-widest border rounded-md w-full p-1 " name="fullname" id="mnumber" placeholder="Mobile number">							
+                                </div>
+                                <div class="pt-3">
+                                    <input type="password" class="tracking-widest border rounded-md w-full p-1 " name="fullname" id="password" placeholder="Password">							
+                                </div>
+                                <div class="pt-3">
+                                    <button type="button" class="text-white bg-gradient-to-r from-green-500 to-blue-500 w-full p-1 rounded-md">Create your account</button>							
+                                </div>
+                                <div class="border-t-4 w-full">
+                                    <button type="button" class="text-white bg-gradient-to-r from-green-500 to-blue-500 p-1 rounded-md">Create your account</button>							
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+			
+		</main>
+		<script src="js/alpine.min.js"></script>
+	</body>
+</html>

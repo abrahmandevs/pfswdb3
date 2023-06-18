@@ -1,0 +1,65 @@
+
+
+
+/*-- Main Slider --*/
+#mainSlider button.active{
+	width:3rem!important;
+	border-radius:13.5px!important;
+}
+
+
+
+
+
+
+
+
+
+[id*="-error"]{
+	color:yellow;
+	float:left;
+	margin-top:5px;
+}
+
+#main-nav ul>li>a.active{
+	background-color:#007bff5c;
+	border-radius:5px;
+}
+
+#services .card:hover{
+	background-color:#ffffff00!important;
+	transition:.8s;
+}
+
+#social-link ul>li{
+	margin-right:12px;
+}
+#social-link ul>li>a{
+	height:2.4rem;
+	width:2.5rem;
+}
+@media(max-width:576px){
+	.h2-sm{
+		font-size:1.25rem;
+		margin-top:5px;
+	}
+	.h4-sm{
+		font-size:1.05rem;
+		margin-top:5px;
+	}
+	.h5-sm{
+		font-size:1.05rem;
+		margin-top:30px;
+	}
+}
+@media (max-width:768px){
+	.h2-sm{
+		font-size:1.5rem;
+	}
+	.h4-sm{
+		font-size:1.2rem;
+	}
+	.h5-sm{
+		font-size:1rem;
+	}
+}
